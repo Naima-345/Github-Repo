@@ -1,0 +1,142 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - apply_leave
+  - inform_leave_type
+  - inform_date
+  - inform_reason
+  - inform_leave_days
+  - ask_leave_policy
+  - ask_salary_date 
+  - ask_attendance_rules
+  - thank_you
+  - nlu_fallback
+  - company_details
+  - job_opening
+
+entities:
+  - leave_type
+  - date
+  - reason
+  - leave_days
+
+slots:
+ 
+  leave_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: leave_form
+            requested_slot: leave_type
+
+
+
+  start_date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: date
+
+  end_date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: date
+  reason:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: reason
+
+  leave_days:
+    type: float
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: leave_days
+
+forms:
+  leave_form:
+    required_slots:
+      - leave_type
+      - start_date
+      - end_date
+      - reason
+      - leave_days
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+  utter_ask_leave_type:
+    - text: "What type of leave would you like to apply for?"
+  utter_ask_start_date:
+    - text: "When will your leave start? (DD/MM/YYYY)"
+  utter_ask_end_date:
+    - text: "When will your leave end? (DD/MM/YYYY)"
+  utter_ask_reason:
+    - text: "Please provide a brief reason for your leave."
+  utter_ask_leave_days:
+    - text: "How many days of leave are you requesting?"
+  utter_ask_leave_policy:
+    - text: "Employees get 14 days annual leave plus sick/casual leave."
+    - text: "Our policy includes 14 days annual leave, sick leave up to 10 days"
+
+  utter_ask_salary_date:
+    - text: "Salaries are paid on the last working day of each month."
+    - text: "Payday is the last weekday of each month."
+
+  utter_ask_attendance_rules:  
+    - text: "Attendance must be marked daily via our digital system."
+    - text: "Use the company app to log your attendance every day."
+    - text: "Company working hours 9am to 6pm."
+
+  utter_thank_you:
+    - text: "You're welcome! Let me know if you need anything else."
+    - text: "Happy to help! Ask me anything else."
+
+  utter_nlu_fallback:
+    - text: "I didn't understand. Could you please rephrase?"
+    - text: "Sorry, I didn't get that. Can you say it differently?"
+  utter_company_details:
+  - text: >
+      Genuity Systems Limited is a leading IT company based in Dhaka, Bangladesh, and a proud sister concern of Genusys Inc. USA. Established in 2003, the company specializes in delivering customized IT solutions with a strong focus on enhancing customer experience.
+
+      Genuity excels in:
+      • Contact Center Solutions  
+      • CRM Systems  
+      • Voicebots & Chatbots  
+
+      The company has been relentlessly serving key industries such as:
+      • Financial Services  
+      • Telecommunications  
+      • FMCG  
+      • Other growth-driven sectors  
+
+      With innovation at its core, Genuity Systems is committed to driving sustainable business growth through intelligent automation and customer-centric technologies.
+       Visit our website: [www.genuitysystems.com](https://www.genuitysystems.com/index.php)
+  utter_job_opening:
+    - text: " You can see the job openings in our website.Visit our website: [www.genuitysystems.com](https://www.genuitysystems.com/index.php)"
+
+actions:
+  - validate_leave_form
+  - action_submit_leave
+  - action_handle_faq  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# actions:
+#   - validate_leave_form
+#   - action_submit_leave
+
+

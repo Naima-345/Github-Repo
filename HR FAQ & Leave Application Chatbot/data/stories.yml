@@ -1,0 +1,139 @@
+version: "3.1"
+
+stories:
+- story: Apply leave full form flow
+  steps:
+    - intent: apply_leave
+    - action: leave_form
+    - active_loop: leave_form
+    - intent: inform_leave_type
+      entities:
+        - leave_type: " leave"
+    - slot_was_set:
+        - leave_type: "leave"
+
+    - intent: inform_date
+      entities:
+        - start_date: "2025-08-20"
+    - slot_was_set:
+        - start_date: "2025-08-20"
+
+    - intent: inform_date
+      entities:
+        - end_date: "2025-08-25"
+    - slot_was_set:
+        - end_date: "2025-08-25"
+
+    - intent: inform_reason
+      entities:
+        - reason: "family trip"
+    - slot_was_set:
+        - reason: "family trip"
+
+    - intent: inform_leave_days
+      entities:
+        - leave_days: 5
+    - slot_was_set:
+        - leave_days: 5
+
+    - active_loop: null
+    - action: action_submit_leave
+- story : Ask for attendance policy 
+  steps: 
+    - intent: ask_attendance_rules
+    - action: utter_ask_attendance_rules
+
+- story : ask salary 
+  steps: 
+    - intent: ask_salary_date
+    - action: utter_ask_salary_date
+- story : leave policy 
+  steps:
+    - intent: ask_leave_policy
+    - action: utter_ask_leave_policy
+
+    - intent: apply_leave
+    - action: leave_form
+    - active_loop: leave_form
+
+    - intent: inform_leave_type
+      entities:
+        - leave_type: "casual"
+    - slot_was_set:
+        - leave_type: "casual"
+
+    - intent: inform_date
+      entities:
+        - start_date: "2025-09-01"
+    - slot_was_set:
+        - start_date: "2025-09-01"
+
+    - intent: inform_date
+      entities:
+        - end_date: "2025-09-03"
+    - slot_was_set:
+        - end_date: "2025-09-03"
+
+    - intent: inform_reason
+      entities:
+        - reason: "personal work"
+    - slot_was_set:
+        - reason: "personal work"
+
+    - intent: inform_leave_days
+      entities:
+        - leave_days: 3
+    - slot_was_set:
+        - leave_days: 3
+
+    - active_loop: null
+    - action: action_submit_leave
+
+- story : company details 
+  steps: 
+    - intent: company_details
+    - action: utter_company_details
+
+
+- story : job openings
+  steps: 
+    - intent: job_opening 
+    - action: utter_job_opening
+# - story: interactive_story_1
+#   steps:
+#   - intent: apply_leave
+#   - action: leave_form
+#   - active_loop: leave_form
+#   - slot_was_set:
+#     - requested_slot: leave_type
+#   - intent: inform_leave_type
+#     entities:
+#     - leave_type: sick leave
+#   - slot_was_set:
+#     - leave_type: sick leave
+#   - action: leave_form
+#   - slot_was_set:
+#     - leave_type: null
+#   - slot_was_set:
+#     - requested_slot: leave_type
+#   - intent: inform_leave_type
+#     entities:
+#     - leave_type: sickleave
+#   - slot_was_set:
+#     - leave_type: sickleave
+#   - action: leave_form
+#   - slot_was_set:
+#     - leave_type: null
+#   - slot_was_set:
+#     - requested_slot: leave_type
+#   - intent: inform_leave_type
+#     entities:
+#     - leave_type: casual
+#   - slot_was_set:
+#     - leave_type: casual
+#   - action: leave_form
+#   - slot_was_set:
+#     - leave_type: null
+#   - slot_was_set:
+#     - requested_slot: leave_type
+#   - action: action_submit_leave 

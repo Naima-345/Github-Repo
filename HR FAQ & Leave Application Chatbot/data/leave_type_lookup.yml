@@ -1,0 +1,29 @@
+version: "3.1"
+
+lookup_tables:
+- lookup: leave_type
+  examples: |
+    # English
+    - annual leave
+    - sick leave
+    - casual leave
+    - maternity leave
+    - paternity leave
+    - unpaid leave
+    - study leave
+    - emergency leave
+    - compensatory leave
+    - bereavement leave
+
+    # Bengali
+    - বার্ষিক ছুটি
+    - অসুস্থতার ছুটি
+    - নৈমিত্তিক ছুটি
+    - মাতৃত্বকালীন ছুটি
+    - পিতৃত্বকালীন ছুটি
+    - বিনা বেতনের ছুটি
+    - পড়াশোনার ছুটি
+    - জরুরি ছুটি
+    - ক্ষতিপূরণমূলক ছুটি
+    - শোকের ছুটি
+

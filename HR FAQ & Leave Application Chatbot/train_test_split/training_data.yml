@@ -1,0 +1,118 @@
+version: "3.1"
+nlu:
+- intent: goodbye
+  examples: |
+    - bye bye
+    - cee you later
+    - আল্লাহ হাফেজ
+    - see you later
+    - বিদায়
+    - good bye
+    - see you around
+    - have a nice day
+- intent: thank_you
+  examples: |
+    - Many thanks
+    - Thanks
+    - এটা খুব কাজে লাগলো
+    - Thank you
+    - অনেক ধন্যবাদ
+    - I appreciate it
+    - আপনার সাহায্যের জন্য ধন্যবাদ
+    - কৃতজ্ঞ
+    - That's helpful
+- intent: ask_salary_date
+  examples: |
+    - when is salary credited?
+    - বেতন কবে পাবো?
+    - when will I get my salary?
+    - which day of the month is salary given ?
+    - বেতন দেওয়ার তারিখ কী?
+    - এই মাসের বেতন কবে আসবে?
+    - কোন দিনে বেতন দেওয়া হয়?
+    - Tell me about salary distribution?
+    - When will this month's salary be paid?
+    - মাসের কোন তারিখে বেতন আসে?
+- intent: ask_attendance_rules
+  examples: |
+    - Tell me about office attendance
+    - উপস্থিতি সংক্রান্ত নিয়ম বলুন
+    - উপস্থিতির নিয়ম কী?
+    - What are the attendance rules?
+    - অফিসে উপস্থিতি কিভাবে গোনা হয়?
+    - দেরি করার জন্য কি গ্রেস টাইম আছে?
+    - How is attendance tracked?
+    - Is there a grace period for being late?
+    - অফিস টাইমিং কি ফ্লেক্সিবল?
+- intent: apply_leave
+  examples: |
+    - আমি অসুস্থতার ছুটি চাই
+    - Apply leave for me
+    - আমার জন্য ছুটি অ্যাপ্লাই করুন
+    - ৩ দিনের ক্যাজুয়াল ছুটি অ্যাপ্লাই করুন
+    - আমি ছুটি নিতে চাই
+    - I need sick leave
+    - Please apply annual leave
+    - I want to apply for leave
+    - কাল থেকে আমি ছুটি চাই
+    - আমি ৫ দিনের বার্ষিক ছুটি নিতে চাই
+- intent: ask_leave_policy
+  examples: |
+    - আমি কতদিন ছুটি নিতে পারি?
+    - মাতৃত্বকালীন ছুটি সম্পর্কে বলুন?
+    - অসুস্থতার জন্য কতদিন ছুটি পাওয়া যায়?
+    - How many leaves am I allowed?
+    - ছুটির নিয়ম কি?
+    - How many sick leaves do I get ?
+    - আমাদের কোম্পানির ছুটি নীতি কী?
+    - বার্ষিক ছুটি কতদিন?
+    - Tell me about the sick leave rules ?
+    - what is the leave policy?
+- intent: greet
+  examples: |
+    - আসসালামু আলাইকুম
+    - let's go
+    - goodmorning
+    - hello there
+    - শুভ সন্ধ্যা
+    - Hey there I need a help
+    - hello
+    - good morning
+    - goodevening
+    - Asslamualikum
+    - আমার একটা সাহায্য দরকার
+    - good afternoon
+    - শুভ সকাল
+- intent: nlu_fallback
+  examples: |
+    - আমাদের কোম্পানির সিইও কে?
+    - Who is the CEO of our company?
+    - কোম্পানিটি কবে প্রতিষ্ঠিত হয়েছিল?
+    - কোম্পানি কি কি পুরস্কার জিতেছে?
+    - How can I invest in our company?
+    - When was the company founded?
+    - What is the company's revenue?
+    - আমাদের ক্লায়েন্টদের সম্পর্কে আমাকে বলুন।
+    - Tell me about our clients
+    - কোম্পানির রাজস্ব কত?
+    - আমাদের কয়টি শাখা আছে?
+    - What awards has the company won?
+    - আমাদের প্রতিযোগী কারা?
+    - কোম্পানি কি কি পণ্য বিক্রি করে?
+    - What products does the company sell?
+- intent: Company_information
+  examples: |
+    - আমাদের কোম্পানির সিইও কে?
+    - What is the main business of our company?
+    - Tell me about our products and services
+    - Tell me about the company
+    - কোম্পানির বিস্তারিত বলুন
+    - Who is the CEO of this company?
+    - What is our company's main industry?
+    - আমাদের কোম্পানি সম্পর্কে বলুন
+    - Share company details
+    - Give me an overview of the company
+    - আমাদের পণ্য ও সেবার সম্পর্কে বলুন
+    - আমাদের কোম্পানির প্রধান ব্যবসা কী?
+    - কোম্পানির একটি সারসংক্ষেপ দিন
+    - Describe our company

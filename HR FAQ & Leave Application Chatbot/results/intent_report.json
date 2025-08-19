@@ -1,0 +1,109 @@
+{
+  "thank_you": {
+    "precision": 0.9166666666666666,
+    "recall": 1.0,
+    "f1-score": 0.9565217391304348,
+    "support": 11,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 11,
+    "confused_with": {}
+  },
+  "Company_information": {
+    "precision": 0.9375,
+    "recall": 1.0,
+    "f1-score": 0.967741935483871,
+    "support": 15,
+    "confused_with": {}
+  },
+  "ask_leave_policy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 13,
+    "confused_with": {}
+  },
+  "apply_leave": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "ask_jobs": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 0.3,
+    "recall": 1.0,
+    "f1-score": 0.4615384615384615,
+    "support": 6,
+    "confused_with": {}
+  },
+  "ask_salary_date": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "ask_help": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "ask_attendance_rules": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "nlu_fallback": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 16,
+    "confused_with": {
+      "affirm": 14,
+      "thank_you": 1,
+      "Company_information": 1
+    }
+  },
+  "accuracy": 0.8778625954198473,
+  "macro avg": {
+    "precision": 0.8461805555555556,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.8654835113460639,
+    "support": 131
+  },
+  "weighted avg": {
+    "precision": 0.831647582697201,
+    "recall": 0.8778625954198473,
+    "f1-score": 0.8458557170375849,
+    "support": 131
+  },
+  "micro avg": {
+    "precision": 0.8778625954198473,
+    "recall": 0.8778625954198473,
+    "f1-score": 0.8778625954198473,
+    "support": 131
+  }
+}

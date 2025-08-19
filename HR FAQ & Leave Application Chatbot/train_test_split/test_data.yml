@@ -1,0 +1,45 @@
+version: "3.1"
+nlu:
+- intent: goodbye
+  examples: |
+    - খোদা হাফেজ
+    - good night
+    - bye
+- intent: thank_you
+  examples: |
+    - Thanks a lot
+    - ধন্যবাদ
+- intent: ask_salary_date
+  examples: |
+    - বেতন প্রসেসিং তারিখ বলুন
+    - What is the salary payment date?
+- intent: ask_attendance_rules
+  examples: |
+    - লেট পলিসি কী?
+    - Do we have flexible timings?
+    - What is the late coming policy?
+- intent: apply_leave
+  examples: |
+    - Apply for 3 days leave starting Monday
+    - I want to take casual leave from tomorrow
+- intent: ask_leave_policy
+  examples: |
+    - can you tell me about leave rules?
+    - Can you please tell me about annual leave of company ?
+    - What are the leave rules in our company?
+- intent: greet
+  examples: |
+    - hey
+    - good evening
+    - hi
+- intent: nlu_fallback
+  examples: |
+    - Who are our competitors?
+    - How many branches do we have?
+    - আমি কীভাবে আমাদের কোম্পানিতে বিনিয়োগ করতে পারি?
+- intent: Company_information
+  examples: |
+    - আমাদের কোম্পানি কেমন?
+    - আমাদের কোম্পানি কোন ইন্ডাস্ট্রিতে কাজ করে?
+    - Can you give me some information about the company?
+    - কোম্পানি সম্পর্কে কিছু তথ্য দিন

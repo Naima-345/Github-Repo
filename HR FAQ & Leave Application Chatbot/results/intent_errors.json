@@ -1,0 +1,130 @@
+[
+  {
+    "text": "What's the weather like today?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 2.0741214029840194e-05
+    }
+  },
+  {
+    "text": "What is the meaning of life?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 2.5105589884333313e-05
+    }
+  },
+  {
+    "text": "How do I invest in stocks?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 3.935614586225711e-05
+    }
+  },
+  {
+    "text": "Who is the CEO of Google?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.651642014621757e-05
+    }
+  },
+  {
+    "text": "What's the capital of France?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 2.431810753478203e-05
+    }
+  },
+  {
+    "text": "tell me something",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "Company_information",
+      "confidence": 3.4860735468100756e-05
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 4.0161517972592264e-05
+    }
+  },
+  {
+    "text": "আমাকে কিছু বলুন।",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.00014610237849410623
+    }
+  },
+  {
+    "text": "কী খবর?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 2.747158578131348e-05
+    }
+  },
+  {
+    "text": "কী অবস্থা?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 3.598295006668195e-05
+    }
+  },
+  {
+    "text": "Who are our competitors?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 2.904025313910097e-05
+    }
+  },
+  {
+    "text": "How many branches do we have?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 3.198468766640872e-05
+    }
+  },
+  {
+    "text": "আমাদের কোম্পানির সিইও কে?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 5.1625986088765785e-05
+    }
+  },
+  {
+    "text": "আমাদের কোম্পানির বর্তমান শেয়ারের দাম কত?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 2.698634853004478e-05
+    }
+  },
+  {
+    "text": "আমাদের কোম্পানির হেড অফিস কোথায়?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 3.175810707034543e-05
+    }
+  },
+  {
+    "text": "আপনার কোম্পানির কাজের ধরন কি?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 4.970672307536006e-05
+    }
+  }
+]
