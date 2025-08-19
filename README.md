@@ -103,7 +103,7 @@ CREATE TABLE leave_applications (
 ```
 
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 -   Email notification to HR after leave submission.
 -   Web UI for employees.
