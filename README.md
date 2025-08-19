@@ -23,7 +23,7 @@ It can answer HR-related queries (leave policy, salary dates, attendance rules, 
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-link>
+   git clone <https://github.com/Naima-345/Github-Repo>
    cd hr-chatbot
 Create a virtual environment (recommended):
 
