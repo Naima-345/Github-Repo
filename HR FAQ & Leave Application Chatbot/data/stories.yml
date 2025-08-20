@@ -137,3 +137,31 @@ stories:
 #   - slot_was_set:
 #     - requested_slot: leave_type
 #   - action: action_submit_leave 
+- story: Bangla leave application flow
+  steps:
+  - intent: greet_bn
+  - action: utter_greet_bn
+  - intent: apply_leave_bn
+  - action: action_apply_leave_bn
+  - intent: thank_you_bn
+  - action: utter_thank_you_bn
+- story: কোম্পানির তথ্য (Bangla)
+  steps:
+    - intent: company_details_bn
+    - action: utter_company_details_bn
+
+- story: চাকরির বিজ্ঞপ্তি (Bangla)
+  steps:
+    - intent: job_opening_bn
+    - action: utter_job_opening_bn
+
+# - story: Bangla inform slots (dummy flow)
+#   steps:
+#     - intent: inform_leave_type_bn
+#       action: utter_ask_leave_type
+#     - intent: inform_date_bn
+#       action: utter_ask_start_date
+#     - intent: inform_reason_bn
+#       action: utter_ask_reason
+#     - intent: inform_leave_days_bn
+#       action: utter_ask_leave_days

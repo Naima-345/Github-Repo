@@ -24,11 +24,11 @@ nlu:
     - farewell
     - see you soon
     - I'm off
+
 - intent: apply_leave
   examples: |
     - I want to apply for leave
     - I'd like to request leave
-    - ছুটি নিতে চাই
     - i want a leave
     - Leave application
     - I need to take some time off
@@ -37,13 +37,12 @@ nlu:
     - I want to request time off
     - Please process my leave request
     - I want to apply foe leave
+    
 - intent: inform_leave_type
   examples: |
     - [sick leave](leave_type)
     - [annual leave](leave_type)
     - [casual leave](leave_type)
-    - [অসুস্থতার ছুটি](leave_type)
-    - [বার্ষিক ছুটি](leave_type)
     - [maternity leave](leave_type)
     - [paternity leave](leave_type)
     - [bereavement leave](leave_type)
@@ -52,6 +51,7 @@ nlu:
     - [sick leave](leave_type)
     - [sickleave](leave_type)
     - [casual](leave_type)
+   
 - intent: inform_date
   examples: |
     - [10/10/2025](date)
@@ -64,6 +64,7 @@ nlu:
     - [December 25th](date)
     - [next Friday](date)
     - [in two weeks](date)
+
 - intent: inform_reason
   examples: |
     - [family trip](reason)
@@ -77,6 +78,10 @@ nlu:
     - [moving to a new house](reason)
     - [studying for exams](reason)
     - [emergency](reason)
+    - [high fever](reason)
+    - [suffering from cold](reason)
+    
+   
 - intent: inform_leave_days
   examples: |
     - [5](leave_days)
@@ -89,6 +94,7 @@ nlu:
     - [6](leave_days)
     - [8](leave_days)
     - [9](leave_days)
+    
 - intent: ask_leave_policy
   examples: |
     - What is the leave policy?
@@ -101,6 +107,7 @@ nlu:
     - Can I take leave for personal reasons?
     - What happens if I exceed my leave days?
     - Are there any special leave policies?
+    
 - intent: ask_salary_date
   examples: |
     - When is the salary date?
@@ -113,6 +120,7 @@ nlu:
     - What date is salary credited to accounts?
     - Are there any changes to the salary date this month?
     - How often is salary paid?
+    
 - intent: ask_attendance_rules
   examples: |
     - What are the attendance rules?
@@ -125,6 +133,7 @@ nlu:
     - What are the working hours?
     - Is there a flexible working policy?
     - How is attendance tracked?
+
 - intent: thank_you
   examples: |
     - Thank you!
@@ -137,6 +146,7 @@ nlu:
     - Thank you for your support.
     - I appreciate it!
     - Thanks for the quick response!
+    
 - intent: nlu_fallback
   examples: |
     - I don't understand.
@@ -149,15 +159,132 @@ nlu:
     - I need more information.
     - Can you clarify?
     - I'm confused.
+    
 - intent: company_details
   examples: |
     - Tell me about the company
     - say something about company
     - describe something about company
     - company details
+  
 - intent: job_opening
   examples: |
     - is there any job circular
     - job openings
     - job circular
     - know about job
+    
+
+
+
+- intent: greet_bn
+  examples: |
+    - হ্যালো
+    - কেমন আছেন?
+    - শুভ সকাল
+    - শুভ অপরাহ্ন
+    - কি খবর?
+
+- intent: goodbye_bn
+  examples: |
+    - বিদায়
+    - আলবিদা
+    - পরে দেখা হবে
+    - আপনার দিনটি ভালো কাটুক
+    - আবার দেখা হবে
+
+- intent: apply_leave_bn
+  examples: |
+    - ছুটি নিতে চাই
+    - আমি ছুটির জন্য আবেদন করতে চাই
+    - আমি কিছু সময়ের জন্য ছুটি নিতে চাই
+    - আমি ছুটি চাই
+    - Leave application
+
+- intent: inform_leave_type_bn
+  examples: |
+    - [অসুস্থতার ছুটি](leave_type)
+    - [বার্ষিক ছুটি](leave_type)
+    - [মাতৃত্বকালীন ছুটি](leave_type)
+    - [পিতৃত্বকালীন ছুটি](leave_type)
+    - [ব্যক্তিগত কারণে ছুটি](leave_type)
+
+- intent: inform_date_bn
+  examples: |
+    - [আগামীকাল](date)
+    - [পরশু](date)
+    - [পরবর্তী সোমবার](date)
+    - [পরবর্তী সপ্তাহ](date)
+    - [নভেম্বরের ১ তারিখ](date)
+
+- intent: inform_reason_bn
+  examples: |
+    - [পারিবারিক সফর](reason)
+    - [ব্যক্তিগত কাজ](reason)
+    - [মেডিকেল চেকআপ](reason)
+    - [বিবাহ](reason)
+    - [ছুটি](reason)
+
+- intent: inform_leave_days_bn
+  examples: |
+    - [৫](leave_days)
+    - [২](leave_days)
+    - [১০](leave_days)
+    - [৩](leave_days)
+    - [১](leave_days)
+
+- intent: ask_leave_policy_bn
+  examples: |
+    - ছুটির নীতি কি?
+    - আপনি কি আমাকে ছুটির নীতি সম্পর্কে বলতে পারেন?
+    - আমি কতদিনের ছুটি পাব?
+    - ছুটি নেওয়ার নিয়ম কি?
+    - ছুটির দিনগুলোর উপর কি কোন সীমাবদ্ধতা আছে?
+
+- intent: ask_salary_date_bn
+  examples: |
+    - বেতন দেওয়ার তারিখ কখন?
+    - আমরা কবে বেতন পাব?
+    - আমার বেতন কবে প্রক্রিয়া হবে?
+    - বেতন দেওয়ার সময়সূচী কি?
+    - মাসের শেষ কর্মদিবসে বেতন দেওয়া হয় কি?
+
+- intent: ask_attendance_rules_bn
+  examples: |
+    - উপস্থিতির নিয়ম কি?
+    - আমি কিভাবে আমার উপস্থিতি চিহ্নিত করব?
+    - আমি যদি দেরি করি তাহলে কি হবে?
+    - অনুপস্থিতির জন্য কি কোন শাস্তি আছে?
+    - আমি কি বাড়ি থেকে কাজ করতে পারি?
+
+- intent: thank_you_bn
+  examples: |
+    - ধন্যবাদ!
+    - আপনার সাহায্যের জন্য ধন্যবাদ!
+    - আমি আপনার সহায়তার জন্য কৃতজ্ঞ।
+    - অনেক ধন্যবাদ!
+    - তথ্য দেওয়ার জন্য ধন্যবাদ।
+
+- intent: nlu_fallback_bn
+  examples: |
+    - আমি বুঝতে পারছি না।
+    - আপনি কি এটা আবার বলতে পারেন?
+    - আপনার কি মানে?
+    - আমি সেটা বুঝতে পারিনি।
+    - আপনি কি ভিন্নভাবে ব্যাখ্যা করতে পারেন?
+
+- intent: company_details_bn
+  examples: |
+    - কোম্পানি সম্পর্কে বলুন
+    - কোম্পানির কিছু তথ্য দিন
+    - কোম্পানি সম্পর্কে কিছু বর্ণনা করুন
+    - কোম্পানির বিস্তারিত
+    - কোম্পানির সম্পর্কে জানাতে পারেন?
+
+- intent: job_opening_bn
+  examples: |
+    - কি কোন চাকরির বিজ্ঞপ্তি আছে?
+    - চাকরির খবর খুঁজে বের করুন
+    - চাকরির বিজ্ঞপ্তি
+    - চাকরি সম্পর্কে জানুন
+    - নতুন চাকরির সুযোগ আছে কি?
